@@ -46,7 +46,7 @@ function checkScore(){
 
 function updateDisplay(){
     document.getElementById('score').innerText = score;
-    document.getElementById('lives').innerText = lives;
+    document.getElementById('lives').innerText = "❤️".repeat(lives);
 }
 
 function resetGame(){
