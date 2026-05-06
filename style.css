@@ -1,20 +1,104 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    background-color: beige;
-}
-.container{
-    margin-top:  50px;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.score, .lives{
-    font-size: 24px;
-    margin: 20px;
+/* Container */
+.container {
+    background: #2f2f4f;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    width: 320px;
 }
-button{
-    font-size: 18px;
-    padding: 10px 20px;
-    margin: 10px;
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Status (score + vidas) */
+.status {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #3a3a66;
+    padding: 15px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.label {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+#score {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#lives {
+    font-size: 1.4rem;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
     cursor: pointer;
-    background-color: rgb(127, 144, 241);
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+/* Cores */
+.add {
+    background: #4caf50;
+}
+
+.lose {
+    background: #f44336;
+}
+
+.bonus {
+    background: #2196f3;
+}
+
+/* Reset */
+.reset {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #ff9800;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.reset:hover {
+    transform: scale(1.05);
 }

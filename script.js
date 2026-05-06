@@ -1,5 +1,7 @@
 let score = 0;
 let lives = 3;
+let previousScore = 0;
+let nextLifeScore = 20;
 
 function addPoint(){
     score += 1;
@@ -19,13 +21,14 @@ function bonus(){
     updateDisplay();
 }
 
-function live(){
-    live -= 1;
+function loseLife(){
+    lives -= 1;
 }
 //verifica se o placar é múltiplo de 20, aí ganha uma vida extra
 function checkScore(){
-    if(score % 20 === 0 && score > 0){
+    if(score >= nextLifeScore){
         lives += 1;
+        nextLifeScore += 20;
     }
     
     if(score < 0){
@@ -38,6 +41,7 @@ function checkScore(){
         resetGame();
     }
 
+    previousScore = score;
 }
 
 function updateDisplay(){
@@ -48,5 +52,6 @@ function updateDisplay(){
 function resetGame(){
     score = 0;
     lives = 3;
+    nextLifeScore = 20;
     updateDisplay();
 }

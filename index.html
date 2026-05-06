@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,29 @@
 </head>
 <body>
     <div class="container">
-        <div class="score">Pontuação: <span id="score">0</span></div>
-        <div class="lives">Vidas: <span id="lives">3</span></div>
+        <h1>🎯 Treino de Pontuação</h1>
 
-        <button onclick="addPoint()">Ganhar Pontos</button>
-        <button onclick="losePoint()">Perder Pontos</button>
-        <button onclick="bonus()">Bônus de Pontos</button>
-        <button onclick="resetGame()">Resetar jogo</button>
+        <div class="status">
+            <div class="card">
+                <span class="label">Pontuação</span>
+                <span id="score">0</span>
+            </div>
+
+            <div class="card">
+                <span class="label">Vidas</span>
+                <span id="lives">❤️❤️❤️</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn add" onclick="addPoint()">Ganhar pontos</button>
+            <button class="btn lose" onclick="losePoint()">Perder pontos</button>
+            <button class="btn bonus" onclick="bonus()">Bônus</button>
+        </div>
+
+        <button class="reset" onclick="resetGame()">Resetar jogo</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
