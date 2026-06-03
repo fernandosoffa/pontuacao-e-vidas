@@ -27,7 +27,7 @@ Projeto educacional para aprendizado.
 1. Clone ou baixe este repositório.
 
 ```bash
-git clone https://github.com/fernando.soffa/Movimento-personagem
+git clone https://github.com/fernando.soffa/pontuacao-e-vidas
 
 2. Abra o arquivo `index.html` em seu navegador.
 
