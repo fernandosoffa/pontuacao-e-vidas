@@ -28,6 +28,7 @@ Projeto educacional para aprendizado.
 
 ```bash
 git clone https://github.com/fernando.soffa/pontuacao-e-vidas
+```
 
 2. Abra o arquivo `index.html` em seu navegador.
 
